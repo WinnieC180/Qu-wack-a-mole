@@ -37,7 +37,7 @@ public class Test extends JPanel{
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-        ImageIcon icon0 = new ImageIcon("src/bg.png");
+        ImageIcon icon0 = new ImageIcon("src/bg2.png");
         Image iconImg = icon0.getImage();
         g.drawImage(iconImg, 0, 0, null);
 
