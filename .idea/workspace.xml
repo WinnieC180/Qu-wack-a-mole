@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbf60f24-57cb-4ba6-a590-528ef94ccd67" name="Changes" comment="Base of the board of the game is displayed and good&#10;//Need to figure out the action listener" />
+    <list default="true" id="dbf60f24-57cb-4ba6-a590-528ef94ccd67" name="Changes" comment="Base of the board of the game is displayed and good&#10;//Need to figure out the action listener">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bg.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
