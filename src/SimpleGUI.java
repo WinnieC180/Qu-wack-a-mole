@@ -10,6 +10,11 @@ public class SimpleGUI extends JFrame implements ActionListener {
     public SimpleGUI() {
         super("QU-WACK A MOLE");
         init();
+
+//        Toolkit toolkit = Toolkit.getDefaultToolkit();
+//        Image image = toolkit.getImage("");
+//        Cursor c = toolkit.createCustomCursor(image , new Point(getX(), getY()), "img");
+//        setCursor (c);
     }
 
     private void init() {
@@ -35,5 +40,6 @@ public class SimpleGUI extends JFrame implements ActionListener {
 //            button.setVisible(false);
 //        }
     }
+
 }
 

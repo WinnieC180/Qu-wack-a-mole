@@ -2,8 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 
-public class Test extends JPanel implements ActionListener {
+public class Test extends JPanel implements ActionListener, MouseMotionListener {
+
+    private int x;
+    private int y;
     private int previous;
 
     private JLabel back;
@@ -46,6 +51,7 @@ public class Test extends JPanel implements ActionListener {
         b7.addActionListener(this);
         b8.addActionListener(this);
         b9.addActionListener(this);
+        addMouseMotionListener(this);
 
 
         b1.setVisible(false);
@@ -148,6 +154,10 @@ public class Test extends JPanel implements ActionListener {
         b9.setContentAreaFilled(false);
         b9.setFocusPainted(false);
         b9.setOpaque(false); //the rest of the icons 2-9
+
+        ImageIcon icon10 = new ImageIcon("src/hammer.png");
+        Image iconImg10 = icon10.getImage();
+        g.drawImage(iconImg10, x-30, y-57, null);
     }
 
     private void randomGoose() {
@@ -199,5 +209,18 @@ public class Test extends JPanel implements ActionListener {
             button.setVisible(false);
             randomGoose();
         }
+    }
+
+
+    @Override
+    public void mouseDragged(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        x = e.getX();
+        y = e.getY();
+        repaint();
     }
 }
