@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbf60f24-57cb-4ba6-a590-528ef94ccd67" name="Changes" comment="button fixed //added actionlistener">
-      <change afterPath="$PROJECT_DIR$/src/hammer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mole1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/title.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimpleGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geese.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

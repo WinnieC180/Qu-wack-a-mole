@@ -5,11 +5,13 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
-public class Test extends JPanel implements ActionListener, MouseMotionListener {
+public class Geese extends JPanel implements ActionListener, MouseMotionListener {
 
     private int x;
     private int y;
     private int previous;
+    private boolean isGeese;
+    private JButton switchButton;
 
     private JLabel back;
     private JButton b1;
@@ -22,7 +24,7 @@ public class Test extends JPanel implements ActionListener, MouseMotionListener 
     private JButton b8;
     private JButton b9;
 
-    public Test () {
+    public Geese () {
         previous = 0;
         b4 = new JButton(""); //put out of order in order to fix overlapping
         add(b4);
@@ -42,6 +44,8 @@ public class Test extends JPanel implements ActionListener, MouseMotionListener 
         add(b8);
         b9 = new JButton("");
         add(b9);
+        switchButton = new JButton("switch mode");
+
         b1.addActionListener(this);
         b2.addActionListener(this);
         b3.addActionListener(this);

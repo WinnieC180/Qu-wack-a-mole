@@ -1,16 +1,17 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class SimpleGUI extends JFrame implements ActionListener {
+public class SimpleGUI extends JFrame{
     private JLabel welcomeLabel;
-    private Test newPanel;
+
+    public static CardLayout cardLayout;
+    public static JPanel mainPanel;
+    private Geese newPanel;
+    private Home homeScreen;
 
     public SimpleGUI() {
         super("QU-WACK A MOLE");
         init();
-
 //        Toolkit toolkit = Toolkit.getDefaultToolkit();
 //        Image image = toolkit.getImage("");
 //        Cursor c = toolkit.createCustomCursor(image , new Point(getX(), getY()), "img");
@@ -18,28 +19,23 @@ public class SimpleGUI extends JFrame implements ActionListener {
     }
 
     private void init() {
-        setTitle("QuWack a mole");
+        setTitle("Qu-wack a mole");
         setSize(615, 877);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
-        newPanel = new Test();
-        add(newPanel);
+        cardLayout = new CardLayout();
+        mainPanel = new JPanel(cardLayout);
+        add(mainPanel);
+
+        homeScreen = new Home();
+//        add(homeScreen);
+        newPanel = new Geese();
+//        add(newPanel);
+        mainPanel.add("pane1", homeScreen);
+        mainPanel.add("pane2", newPanel);
         setVisible(true);
     }
 
-    @Override
-    // ActionListener interface method, called when a button is clicked
-    public void actionPerformed(ActionEvent ae) {
-        // cast ae to a JButton object since we want to call the getText method on it;
-        // casting is needed since getSource() returns Object type, NOT a JButton
-//        Object source = ae.getSource();
-//        JButton button = (JButton) source;
-//        String text = button.getText();
-//
-//        if (text.equals("")) {
-//            button.setVisible(false);
-//        }
-    }
 
 }
 
